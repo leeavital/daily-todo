@@ -1,22 +1,25 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>TODOs</title>
-        <script type="text/javascript" src="js/requirejs/require.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-    </head>
-    <body ng-app="daily-todo" ng-controller="dt.MainCtrl" >
-        {{message}} 
+   <head>
+      <title>TODOs</title>
+      <script type="text/javascript" src="js/requirejs/require.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+      <link type="text/css" rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.min.css" />
+   </head>
+   <body ng-app="daily-todo" ng-controller="dt.MainCtrl" class="container">
 
 
+      <ul>
+         <li ng-repeat="task in todaysTasks">
+            {{task.name}}
+         </li>
+      </ul>
 
-        <form ng-submit="addTask()">
-            <fieldset>
-                <input type="text" name="taskName" ng-model="taskform.name" />
-                <input type="submit" value="create" />
-            </fieldset> 
-        </form>
+      <form ng-submit="addTask()" class="form">
+         <input type="text" name="taskName" ng-model="taskform.name" />
+         <input type="submit" value="create" />
+      </form>
 
-    </body>
+   </body>
 
 </head>

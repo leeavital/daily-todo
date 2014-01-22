@@ -23,6 +23,8 @@
 
   "dependencies" : {
     "angular": "1.2",
-    "requirejs": null
+    "requirejs": null,
+    "bootstrap": null,
+    "watch" : null
   }
 }
