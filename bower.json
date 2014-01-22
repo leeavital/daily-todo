@@ -1,0 +1,28 @@
+{
+  "name": "daily-todo",
+  "version": "0.0.0",
+  "authors": [
+    "Lee Avital <leeavital@gmail.com>"
+  ],
+  "description": "Generic todo app with a small twist",
+  "main": "app.js",
+  "keywords": [
+    "angular",
+    "todo"
+  ],
+  "license": "MIT",
+  "homepage": "http://leeavital.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+
+  "dependencies" : {
+    "angular": "1.2",
+    "requirejs": null
+  }
+}

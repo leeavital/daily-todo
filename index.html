@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>TODOs</title>
+        <script type="text/javascript" src="js/requirejs/require.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body ng-app="daily-todo" ng-controller="dt.MainCtrl" >
+        {{message}} 
+
+
+
+        <form ng-submit="addTask()">
+            <fieldset>
+                <input type="text" name="taskName" ng-model="taskform.name" />
+                <input type="submit" value="create" />
+            </fieldset> 
+        </form>
+
+    </body>
+
+</head>
